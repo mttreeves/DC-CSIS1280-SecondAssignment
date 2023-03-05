@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>The Spice Bowl</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+
+    <body>
+        <div id="heading">
+            <header>
+                <figure>
+                    <img src="images/logo.png" alt="logo">
+                </figure>
+            </header>
+        
+            <nav>
+                <a href="#">Home</a> 
+                <a href="#">Menu</a> 
+                <a href="#">Spices</a> 
+                <a href="#">Coupons</a>
+                <a href="#">Reviews</a>
+            </nav>
+        </div>
+
+        <main>
+            <div id="forms">
+                <h1>Survey Form</h1>
+
+                <p>Thank you for taking our customer survey. Your response helps us maintain the tradition that has made us the 
+                    top-rated place in the metro area. Surveys are private and confidential. Spice Bowl will not share your
+                    contact information with third parties, <em>ever</em>.
+                </p>
+
+                <p>Required values are marked by an asterisk (*)</p>
+
+                <form>
+
+                    <div id="container">
+                        <div class="first">
+
+                            <fieldset id="customer">
+                                <legend>Customer Information</legend>
+            
+                                <label>Title: 
+                                    <input type="search" name="title" id="title" list="search-suggestions"></label>
+                                    <datalist id="search-suggestions">
+                                        <option value="Mr." label="Mr.">
+                                        <option value="Mrs." label="Mrs.">
+                                        <option value="Ms." label="Ms.">
+                                    </datalist>
+                                <label>Name*: <input type="text" name="lname" id="lname" placeholder="first and last name"></label>
+                                <label>Street Address: <input type="text" name="address" id="address"></label>
+                                <label>City: <input type="text" name="city" id="city"></label>
+                                <label>State: <input type="text" name="state" id="state"></label>
+                                <label>Postal Code: <input type="text" name="postal" id="postal" placeholder="nnnnn (-nnnn)"></label>
+                                <label>Phone Number: <input type="text" name="phone" id="phone" placeholder="(nnn) nnn-nnnn"></label>
+                                <label>E-mail*: <input type="text" name="email" id="email" tabindex="1"></label>
+                                <label>Where did you hear about us? (Select all that apply): </label>
+                                    <select name="select" id="select" multiple>
+                                        <option value="Internet" label="Internet">
+                                        <option value="Magazine" label="Magazine">
+                                        <option value="Newspaper" label="Newspaper">
+                                        <option value="Word of Mouth" label="Word of Mouth">
+                                        <option value="Other" label="Other">
+                                        </select>
+                                <label>What's your favorite dish?: <input type="text" name="dish" id="dish"></label>
+            
+                                <label for="dineOut">How many times do you dine out per month? </label>
+                                <input type="number" name="dineOut" id="dineOut" min="1" max="100">
+            
+                                <label for="add">Add me to your mailing list for great coupons and specials!</label>
+                                <input type="checkbox" name="add" id="add" value="add">
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="second">
+
+                            <fieldset id="share">
+                                <legend>Share Your Experience</legend>
+            
+                                <label for="myDate">Date of Visit: <input type="date" name="myDate" id="myDate"></label>
+                                
+                                <label>Order Type: 
+                                    <input type="search" name="order" id="order" list="orderType"></label>
+                                    <datalist id="orderType">
+                                        <option value="Dine In" label="Dine In">
+                                        <option value="Dine Out" label="Dine Out">
+                                    </datalist>
+                                
+                                    <div id="input">
+                                        <label for="service">Was your service friendly? <input type="radio" name="serv" id="service"> Yes <input type="radio" name="serv" id="service"> No</label>
+        
+                                        <label for="order">Was your order correct? <input type="radio" name="ord" id="order"> Yes <input type="radio" name="ord" id="order">No</label>
+        
+                                        <label for="temperature">Was your food hot? <input type="radio" name="temp" id="temperature"> Yes <input type="radio" name="temp" id="temperature"> No</label>
+                                    </div>
+                                    
+                                    <label for="rating">Rate the overall service (0 = poor; 10 = great):</label>
+                                    <input type="range" name="rating" id="rating" min="1" max="10" step="1">
+        
+                                    <label for="comment">Tell us more about your experience!</label>
+                                    <textarea name="comment" id="comment" rows="5" cols="60"></textarea>
+        
+                            </fieldset>
+
+                        </div>
+                    </div>
+                    
+    
+                    
+                    <input id="submit" type="submit" value="Submit">
+                    <input id="cancel" type="reset" value="Cancel">
+                </form>
+
+            </div>
+ 
+                <table>
+                    <caption>February 2022 Calendar</caption>
+                    <tr>
+                        <th scope="col">Sun</th>
+                        <th scope="col">Mon</th>
+                        <th scope="col">Tues</th>
+                        <th scope="col">Wed</th>
+                        <th scope="col">Thurs</th>
+                        <th scope="col">Fri</th>
+                        <th scope="col">Sat</th>
+                    </tr>
+                    <tr>
+                        <td class="ext">30</td>
+                        <td class="ext">31</td>
+                        <td class="feb">1</td>
+                        <td class="feb">2</td>
+                        <td class="feb">3</td>
+                        <td class="feb">4</td>
+                        <td class="feb">5</td>
+                    </tr>
+                    <tr class="feb">
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="feb">
+                        <td>13</td>
+                        <td>14 <p class="vday">Valentine's Day</p></td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr class="feb">
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td class="feb">27</td>
+                        <td class="feb">28</td>
+                        <td class="ext">1</td>
+                        <td class="ext">2</td>
+                        <td class="ext">3</td>
+                        <td class="ext">4</td>
+                        <td class="ext">5</td>
+                    </tr>
+                </table>
+        </main>
+        <footer>
+            <h6>Copyright &copy;2022 Author: Matthew Kim 300216191</h6>
+        </footer>
+    </body>
+    
+</html>

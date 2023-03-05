@@ -1,0 +1,170 @@
+/* suck ma cock */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url(images/back.png) no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+}
+
+#heading {
+    background-color: rgba(250, 150, 50, 0.8);
+    margin: 0.25em;
+}
+
+body {
+    width: 80%;
+    box-shadow: 10px 10px 10px 10px rgba(41, 39, 39, 0.5);
+    margin: auto;
+}
+
+nav {
+    text-align: center;
+    word-spacing: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+h1 {
+    color: rgb(232, 214, 148);
+}
+
+main {
+    background-color: rgba(223, 221, 214, 0.462);
+}
+
+#forms {
+    background-color: white;
+    padding: 3em;
+}
+
+#customer {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+/* 
+#container {
+    display: flex;
+}
+
+.first, .second {
+    flex: auto;
+    min-width: auto;
+} */
+
+
+#share {
+    flex: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+legend {
+    padding: 5px;
+    background-color:rgba(250, 150, 50, 0.8);
+    font-size: 1em;
+    color: white;
+}
+
+fieldset {
+    border-radius: 10px;
+    background-color: rgb(240, 217, 183);
+}
+
+#input input {
+    border: 2px solid black;
+}
+
+label {
+    display: block;
+    /* float: left;
+    clear: left;
+    text-align: left; */
+}
+/* 
+input, select {
+    float: right;
+    margin-left: 50px;
+    margin-top: 10px;
+} */
+
+.vday {
+    margin: 0px;
+}
+
+/* 
+#submit{
+    text-align: center;
+}
+
+#cancel{
+    text-align: center;
+} */
+
+caption {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border: 5px double rgb(154, 64, 3);
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+tr {
+    color: darkblue;
+}
+
+th {
+    background-color: rgb(154, 64, 3);
+    color: white;
+}
+
+.feb {
+    background-color: rgba(232, 214, 148, 0.6);
+    box-shadow: inset 0px 0px 20px gray;
+    
+}
+
+.ext {
+    background-color: rgba(223, 221, 214, 0.462);
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background-color: rgba(232, 191, 148, 0.6);
+}
+
+@media (max-width: 1024px) {
+    body {
+        width:100%;
+    }
+}
+
+@media (max-width: 768px) {
+    table{
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+}
